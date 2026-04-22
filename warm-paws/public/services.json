@@ -1,0 +1,50 @@
+[
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Bed Rental",
+    "price": 45,
+    "rating": 4.7,
+    "image": "https://i.postimg.cc/abc3",
+    "description": "Ultra-soft self-warming beds for cold nights"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Moisturizing Bath",
+    "price": 40,
+    "rating": 4.6,
+    "image": "https://i.postimg.cc/abc4",
+    "description": "Oatmeal bath to soothe dry, itchy winter skin"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Safety Boots",
+    "price": 20,
+    "rating": 4.5,
+    "image": "https://i.postimg.cc/abc5",
+    "description": "Anti-slip boots for icy walks and salt protection"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Indoor Play Session",
+    "price": 15,
+    "rating": 4.9,
+    "image": "https://i.postimg.cc/abc6",
+    "description": "Energy-burning fun in a climate-controlled room"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Immunity Boost Diet",
+    "price": 50,
+    "rating": 4.8,
+    "image": "https://i.postimg.cc/abc7",
+    "description": "Specialized winter meals high in vitamins"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Thermal Blanket Wrap",
+    "price": 18,
+    "rating": 4.7,
+    "image": "https://i.postimg.cc/abc8",
+    "description": "Lightweight foil-lined blankets for travel"
+  }
+]

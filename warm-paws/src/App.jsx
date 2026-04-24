@@ -7,6 +7,8 @@ import ServiceDetails from "./pages/ServiceDetails";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PrivateRoute from "./routes/PrivateRoute";
+import ForgetPassword from "./pages/ForgetPassword";
+
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+
+          <Route path="/forget-password" element={<ForgetPassword />} />
 
           <Route
             path="/profile"

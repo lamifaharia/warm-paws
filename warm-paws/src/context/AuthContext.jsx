@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, sendPasswordResetEmail } from "firebase/auth";
 
 export const AuthContext = createContext(null);
 
@@ -16,9 +16,14 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
   const authInfo = {
     user,
     loading,
+    resetPassword,
   };
 
   return (
@@ -28,4 +33,4 @@ const AuthProvider = ({ children }) => {
   );
 };
 
-export default AuthProvider; // <--- This line is the most important!
+export default AuthProvider;

@@ -7,7 +7,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom thermal coat fitting to keep your pets warm during snow walks.",
-    "image": "https://i.ibb.co/vYm0Y7z/dog-coat.jpg",
+    "image": "../public/assets/winter coat.jpg",
     "providerName": "PawCare Studio",
     "providerEmail": "info@pawcare.com"
   },
@@ -19,7 +19,7 @@
     "rating": 4.8,
     "slotsAvailable": 10,
     "description": "Protective wax application to prevent salt and ice damage to sensitive paws.",
-    "image": "https://i.ibb.co/9N7z7vG/paw-balm.jpg",
+    "image": "../public/assets/paw balm.jpg",
     "providerName": "CozyPets Grooming",
     "providerEmail": "hello@cozypets.com"
   },

@@ -61,7 +61,7 @@ const Signup = () => {
             </p>
           )}
 
-          {/* Name */}
+          {/* ---------------------------Name ---------------------------*/}
           <input
             name="name"
             placeholder="Full Name"
@@ -69,7 +69,7 @@ const Signup = () => {
             className="w-full p-3 border border-slate-300 rounded-lg"
           />
 
-          {/* Email */}
+          {/* ---------------------------Email--------------------------- */}
           <input
             name="email"
             type="email"
@@ -78,7 +78,7 @@ const Signup = () => {
             className="w-full p-3 border border-slate-300 rounded-lg"
           />
 
-          {/* Password */}
+          {/* ---------------------------Password ---------------------------*/}
           <div className="relative">
             <input
               name="password"
@@ -101,7 +101,7 @@ const Signup = () => {
             Must include uppercase, lowercase, and 6+ characters
           </p>
 
-          {/* Submit */}
+          {/* ---------------------------Submit ---------------------------*/}
           <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition shadow">
             Signup
           </button>

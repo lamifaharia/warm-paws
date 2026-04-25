@@ -19,7 +19,7 @@ const Home = () => {
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">
         
-        {/* 1. High-End Hero Section */}
+        {/* ---------------------------1. Hero Section ---------------------------*/}
         <section className="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
           <Swiper 
             modules={[Autoplay, Pagination, Navigation]}
@@ -49,7 +49,7 @@ const Home = () => {
           </Swiper>
         </section>
 
-        {/* 2. Services Grid - Medical/Pro Look */}
+        {/* 2. ---------------------------Services Grid--------------------------- */}
         <section>
           <div className="flex flex-col items-center mb-12">
             <h2 className="text-3xl font-semibold text-slate-800 tracking-tight">Our Professional Services</h2>
@@ -91,7 +91,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* 3. Trust & Safety Section */}
+        {/* 3. ---------------------------Trust & Safety Section--------------------------- */}
         <section className="grid md:grid-cols-2 gap-8 items-center bg-white border border-slate-200 p-12 rounded-2xl shadow-sm">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
@@ -125,7 +125,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* 4. Expert Vets Section */}
+        {/* 4.--------------------------- Expert Vets Section ---------------------------*/}
         <section className="pb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900">Medical Board</h2>

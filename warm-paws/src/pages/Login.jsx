@@ -39,7 +39,7 @@ const Login = () => {
     <div className="min-h-[calc(100vh-80px)] flex items-center justify-center bg-slate-50 py-12 px-4">
       <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl border border-slate-100">
         
-        {/* Header */}
+        {/* ---------------------------Header--------------------------- */}
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-slate-900">
             Welcome Back
@@ -74,7 +74,7 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Form */}
+        {/* ---------------------------Form ---------------------------*/}
         <form onSubmit={handleLogin} className="mt-6 space-y-5">
           {error && (
             <p className="text-red-500 text-sm text-center bg-red-50 py-2 rounded border border-red-100">
@@ -82,7 +82,7 @@ const Login = () => {
             </p>
           )}
 
-          {/* Email */}
+          {/* ---------------------------Email--------------------------- */}
           <div>
             <label className="text-xs font-bold text-slate-700 uppercase block mb-1">
               Email
@@ -96,7 +96,7 @@ const Login = () => {
             />
           </div>
 
-          {/* Password */}
+          {/* ---------------------------Password ---------------------------*/}
           <div className="relative">
             <label className="text-xs font-bold text-slate-700 uppercase block mb-1">
               Password
@@ -119,7 +119,7 @@ const Login = () => {
             </button>
           </div>
 
-          {/* Forgot Password */}
+          {/* ---------------------------Forgot Password--------------------------- */}
           <div className="text-right text-sm">
             <Link to="/forget-password" className="text-blue-600 hover:underline">
               Forgot Password?
@@ -132,7 +132,7 @@ const Login = () => {
           </button>
         </form>
 
-        {/* Signup */}
+        {/* ---------------------------Signup ---------------------------*/}
         <p className="text-center text-sm text-slate-500">
           Don't have an account?{" "}
           <Link to="/signup" className="text-blue-600 font-semibold hover:underline">

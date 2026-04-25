@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import './index.css?inline'
 import './index.css'
 
+
 AOS.init();
 
 ReactDOM.createRoot(document.getElementById("root")).render(

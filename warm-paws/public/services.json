@@ -7,7 +7,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom thermal coat fitting to keep your pets warm during snow walks.",
-    "image": "../public/assets/winter coat.jpg",
+    "image": "/assets/winter coat.jpg",
     "providerName": "PawCare Studio",
     "providerEmail": "info@pawcare.com"
   },
@@ -19,7 +19,7 @@
     "rating": 4.8,
     "slotsAvailable": 10,
     "description": "Protective wax application to prevent salt and ice damage to sensitive paws.",
-    "image": "../public/assets/paw balm.jpg",
+    "image": "/assets/paw balm.jpg",
     "providerName": "CozyPets Grooming",
     "providerEmail": "hello@cozypets.com"
   },
@@ -31,7 +31,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Heated indoor playground for high-energy dogs when it's too cold outside.",
-    "image": "../public/assets/winter indoor playground.jpg",
+    "image": "/assets/winter indoor playground.jpg",
     "providerName": "ActivePaws",
     "providerEmail": "play@activepaws.com"
   },
@@ -43,7 +43,7 @@
     "rating": 5.0,
     "slotsAvailable": 2,
     "description": "Expert consultation on winter diets to maintain healthy weight and fur thickness.",
-    "image": "../public/assets/nutritious.jpg",
+    "image": "/assets/nutritious.jpg",
     "providerName": "VetWise Nutrition",
     "providerEmail": "dr.smith@vetwise.com"
   },
@@ -55,7 +55,7 @@
     "rating": 4.6,
     "slotsAvailable": 8,
     "description": "Setting up safe, temperature-controlled sleeping zones for senior pets.",
-    "image": "../public/assets/heated bed.jpg",
+    "image": "/assets/heated bed.jpg",
     "providerName": "WarmHome Pets",
     "providerEmail": "support@warmhome.com"
   },
@@ -67,7 +67,7 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "Grooming that maintains length for warmth while preventing winter matting.",
-    "image": "../public/assets/winter fur style.jpg",
+    "image": "/assets/winter fur style.jpg",
     "providerName": "Fluff & Puff",
     "providerEmail": "style@fluffpuff.com"
   },
@@ -79,7 +79,7 @@
     "rating": 4.7,
     "slotsAvailable": 6,
     "description": "Helping pets get accustomed to wearing protective footwear for icy conditions.",
-    "image": "../public/assets/snow bootie.jpg",
+    "image": "/assets/snow bootie.jpg",
     "providerName": "StepWise Academy",
     "providerEmail": "train@stepwise.com"
   },
@@ -91,7 +91,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Specialized massage and light therapy to soothe stiff joints during cold snaps.",
-    "image": "../public/assets/winter joint therapy.jpg",
+    "image": "/assets/winter joint therapy.jpg",
     "providerName": "AgilePets Clinic",
     "providerEmail": "care@agilepets.com"
   },
@@ -103,7 +103,7 @@
     "rating": 4.5,
     "slotsAvailable": 12,
     "description": "Installation of heated water bowls to prevent outdoor freezing for garden pets.",
-    "image": "../public/assets/hydration station.jpg",
+    "image": "/assets/hydration station.jpg",
     "providerName": "AquaFlow Systems",
     "providerEmail": "install@aquaflow.com"
   },
@@ -115,7 +115,7 @@
     "rating": 4.8,
     "slotsAvailable": 7,
     "description": "Deep de-shedding treatment to prepare the coat for thick winter growth.",
-    "image": "../public/assets/seasonal shedding.jpg",
+    "image": "/assets/seasonal shedding.jpg",
     "providerName": "The Mane Event",
     "providerEmail": "hello@maneevent.com"
   },
@@ -127,7 +127,7 @@
     "rating": 5.0,
     "slotsAvailable": 2,
     "description": "Professional winter-themed portraits with festive backdrops and props.",
-    "image": "../public/assets/holiday photoshoot.jpg",
+    "image": "/assets/holiday photoshoot.jpg",
     "providerName": "Snaps & Paws",
     "providerEmail": "booking@snapspaws.com"
   },
@@ -139,7 +139,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Aromatherapy bath with lavender oils to reduce seasonal anxiety and dry skin.",
-    "image": "../public/assets/calming winter spa.jpg",
+    "image": "/assets/calming winter spa.jpg",
     "providerName": "Serene Paws",
     "providerEmail": "relax@serenepaws.com"
   }

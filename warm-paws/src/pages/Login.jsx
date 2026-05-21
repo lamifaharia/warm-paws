@@ -25,9 +25,13 @@ const Login = () => {
         navigate(from);
       })
       .catch((err) => {
-        // Logs the exact Firebase error code to the console for easier debugging
         console.error("Firebase Login Error:", err.code, err.message);
-        setError("Invalid email or password.");
+        
+        if (err.code === "auth/invalid-credential" || err.code === "auth/user-not-found") {
+          setError("No account found with this email. Please sign up first!");
+        } else {
+          setError("Invalid email or password.");
+        }
       });
   };
 

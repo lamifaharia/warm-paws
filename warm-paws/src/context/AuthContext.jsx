@@ -6,6 +6,8 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
+  createUserWithEmailAndPassword, 
+  updateProfile, 
 } from "firebase/auth";
 
 export const AuthContext = createContext(null);
@@ -27,6 +29,17 @@ const AuthProvider = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
+  const signup = (email, password) => {
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  const updateUser = (name, photoURL) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photoURL,
+    });
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -35,17 +48,18 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // Group all values and functions securely
+  // Make sure they are explicitly mapped in your authInfo block
   const authInfo = {
     user,
     loading,
-    login: (email, password) => signInWithEmailAndPassword(auth, email, password),
-    googleLogin: () => signInWithPopup(auth, new GoogleAuthProvider()),
-    resetPassword: (email) => sendPasswordResetEmail(auth, email),
+    login,
+    googleLogin,
+    resetPassword,
+    signup,
+    updateUser,
   };
 
   return (
-    // Only pass values down if context initialization has structure
     <AuthContext.Provider value={authInfo}>
       {children}
     </AuthContext.Provider>

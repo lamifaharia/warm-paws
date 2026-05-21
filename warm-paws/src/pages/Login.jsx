@@ -24,7 +24,9 @@ const Login = () => {
         setError("");
         navigate(from);
       })
-      .catch(() => {
+      .catch((err) => {
+        // Logs the exact Firebase error code to the console for easier debugging
+        console.error("Firebase Login Error:", err.code, err.message);
         setError("Invalid email or password.");
       });
   };
@@ -32,7 +34,11 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => navigate(from))
-      .catch(() => setError("Google login failed."));
+      .catch((err) => {
+        // Logs the exact Firebase error code to the console for easier debugging
+        console.error("Firebase Google Error:", err.code, err.message);
+        setError("Google login failed.");
+      });
   };
 
   return (

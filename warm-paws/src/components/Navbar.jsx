@@ -1,13 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import toast from "react-hot-toast"; 
 
 const Navbar = () => {
-  const { user, logout } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext); 
+  const navigate = useNavigate(); 
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast.success("Logged out safely!");
+        navigate("/login"); // 
+      })
+      .catch((error) => {
+        console.error("Logout Error:", error);
+        toast.error("Failed to log out.");
+      });
+  };
 
   return (
     <div className="navbar bg-base-100 shadow-lg px-4 md:px-8 mb-6 rounded-b-lg">
-      {/* ---------------------------Logo Section ---------------------------*/}
+      {/* Logo Section */}
       <div className="flex-1">
         <Link
           to="/"
@@ -30,7 +44,7 @@ const Navbar = () => {
           )}
         </ul>
 
-        {/* ---------------------------Auth Logic Section ---------------------------*/}
+        {/* Auth Logic Section */}
         <div className="flex items-center gap-3">
           {!user ? (
             <div className="flex gap-2">
@@ -43,7 +57,7 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="dropdown dropdown-end flex items-center gap-3">
-              {/* ---------------------------User Photo with DaisyUI Avatar style--------------------------- */}
+              {/* User Photo */}
               <div className="avatar">
                 <div className="w-10 rounded-full ring ring-pink-500 ring-offset-base-100 ring-offset-2">
                   <img
@@ -54,8 +68,9 @@ const Navbar = () => {
                 </div>
               </div>
 
+              {/* Logout Button */}
               <button
-                onClick={logout}
+                onClick={handleLogOut} 
                 className="btn btn-error btn-sm text-white"
               >
                 Logout

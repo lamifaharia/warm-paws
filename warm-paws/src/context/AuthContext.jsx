@@ -6,8 +6,9 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
-  createUserWithEmailAndPassword, 
-  updateProfile, 
+  createUserWithEmailAndPassword,
+  updateProfile,
+  signOut, // 👈 1. Add this import at the top
 } from "firebase/auth";
 
 export const AuthContext = createContext(null);
@@ -40,6 +41,12 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+  // 👈 2. Add the logOut function here
+  const logOut = () => {
+    setLoading(true);
+    return signOut(auth);
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -48,7 +55,6 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // Make sure they are explicitly mapped in your authInfo block
   const authInfo = {
     user,
     loading,
@@ -57,6 +63,7 @@ const AuthProvider = ({ children }) => {
     resetPassword,
     signup,
     updateUser,
+    logOut, // 👈 3. Make sure to share it in authInfo
   };
 
   return (
